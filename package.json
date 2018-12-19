@@ -1,0 +1,22 @@
+{
+  "name": "eat-dat-burger",
+  "version": "1.0.0",
+  "description": "burger homework",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pydnar/eat-dat-burger.git"
+  },
+  "author": "randy porter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pydnar/eat-dat-burger/issues"
+  },
+  "homepage": "https://github.com/pydnar/eat-dat-burger#readme"
+}
