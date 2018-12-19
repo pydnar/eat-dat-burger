@@ -1,0 +1,25 @@
+// Set up MySQL connection.
+var mysql = require("mysql");
+var connection;
+if (process.env.JAWSDB_URL){
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else {
+    connection = mysql.createConnection({
+        host:'localhost',
+        user:"root",
+        password:'root',
+        database:"burgersdb"
+    });
+}
+
+connection.connect(function(err) {
+  if (err) {
+    console.error("Error: " + err);
+    return;
+  }
+  console.log("Connection ID from mysql(burgersdb) is: " + connection.threadId);
+});
+
+// Export connection for our ORM to use.
+module.exports = connection;
